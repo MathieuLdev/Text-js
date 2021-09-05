@@ -52,7 +52,7 @@ h3 {
         transform: translateZ(0px);
         opacity: 1;
     }
-    32% {
+    30% {
         transform: translateZ(-280px) translateX(200px);
         opacity: 0;
     }

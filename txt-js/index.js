@@ -9,12 +9,12 @@ const createLetter = () => {
 
     letter.classList.add('letter');
     letter.style.opacity = '0';
-    letter.style.animation = 'anim 5s ease forwards'
+    letter.style.animation = 'anim 9s ease forwards'
     letter.textContent = array[wordIndex][letterIndex];
 
 setTimeout(() => {
     letter.remove();
-}, 2000)
+}, 3000)
 }
 
 
@@ -33,7 +33,7 @@ const loop = () => {
             wordIndex++;
             setTimeout(() => {
                 loop();
-            }, 2000);
+            }, 3000);
         }
     }, 80);
 };
