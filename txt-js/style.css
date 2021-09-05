@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Aclonica";
+    src: url(./assets/Aclonica-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Aclonica", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+.target {
+    display: flex;
+    text-align: left;
+    width: 200px;
+    perspective: 200px;
+    transform: translateX(20px);
+    animation: color 20s alternate infinite;
+}
+
+.letter {
+    transform: translateZ(200px);
+}
+
+@keyframes color {
+    0% {
+        color: blue
+    }
+    50% {
+        color: red
+    }
+    100% {
+        color: blue
+    }
+}
+
+@keyframes anim {
+    25% {
+        transform: translateZ(0px);
+        opacity: 1;
+    }
+    32% {
+        transform: translateZ(-280px) translateX(200px);
+        opacity: 0;
+    }
+}
